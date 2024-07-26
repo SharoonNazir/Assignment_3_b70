@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      d = new Date();
+      let year = d.getFullYear();
+      let month = d.getMonth();
+      let date = d.getDate();
+
+      year_birth = prompt("Enter your Birth Year: ");
+      year_birth = Number(year_birth);
+      if (year_birth > year) {
+        console.log("Enter Valid Date of Birth");
+      } else if (year_birth == year) {
+        console.log("Your age is in Months");
+      } else {
+        age = year - year_birth;
+        console.log("Your age is: " + age);
+      }
+    </script>
+  </body>
+</html>
